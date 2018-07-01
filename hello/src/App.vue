@@ -1,10 +1,7 @@
 <template>
   <div id="app">
-    <h1>HelloWorld</h1>
-    <p>Welcome!!!!woooooooo!odsaqeueo</p>
+    <p>Here is miemie</p>
     <miemie mmm="qqqqqqqq"/>
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
@@ -29,5 +26,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+h1{
+  color:yellow;
 }
 </style>

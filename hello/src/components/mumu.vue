@@ -1,17 +1,15 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h3>Installed CLI Plugins</h3>
-    
+  <div class="mumu">
+    <h1>This is mumu h1 title</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'mumu',
   props: {
-    msg: String
-  }
+    mu: String
+  },
 }
 </script>
 
