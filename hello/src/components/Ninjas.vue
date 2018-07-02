@@ -1,10 +1,13 @@
 <template>
-  <ul id="ninjas">
+  <div id="ninjas">
+  <ul >
     <li v-for="ninja in ninjas" :key="ninja.id" @click="ninja.show=!ninja.show">
       <h2>{{ ninja.name }}</h2>
       <p v-if='ninja.show'>{{ ninja.speciality }}</p>
     </li>
   </ul>
+  <button>No</button>
+  </div>
 </template>
 
 <script>

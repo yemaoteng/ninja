@@ -1,12 +1,21 @@
 <template>
   <footer>
-    This is footer
+    This is footer{{foottitle}}
   </footer>
 </template>
 
 <script>
 export default {
-  
+  props:{
+    title:{
+      type:String
+    }
+  },
+  computed:{
+    foottitle:function(){
+      return this.title;
+    }
+  }
 }
 </script>
 

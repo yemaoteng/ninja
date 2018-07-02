@@ -1,13 +1,34 @@
 <template>
   <div>
     <h1>This is Header</h1>
+    <p>{{htitle}}</p>
+    <button @click="changetitle">Ha?</button>
   </div>
 </template>
 
 <script>
+
 export default {
-  
+  props:{
+    title:{
+      type:String
+    }
+  },
+  data(){
+    return {}
+  },
+  methods: {
+    changetitle:function() {
+      this.title='changed title'
+    }
+  },
+  computed:{
+    htitle:function(){
+      return this.title
+    }
+  }
 }
+
 </script>
 
 <style scope>
