@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    
+    <app-header></app-header>
+    <ninjas></ninjas>
+    <app-footer></app-footer>
   </div>
 </template>
 
@@ -20,5 +22,12 @@ export default {
 </script>
 
 <style>
-
+* {
+  box-sizing: border-box;
+}
+html,
+body{
+  margin:0;
+  padding:0;
+}
 </style>
