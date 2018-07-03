@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="header">
     <h1>This is Header</h1>
     <p>{{htitle}}</p>
     <button @click="changetitle">Ha?</button>
@@ -33,6 +33,9 @@ export default {
 </script>
 
 <style scope>
+.header {
+  background-color: green;
+}
 h1{
   background-color: lightgreen;
   color:#222;

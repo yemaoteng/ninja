@@ -2,8 +2,6 @@
   <div id="app">
     <app-header v-bind:title="title" v-on:fire="firechange"></app-header>
     <app-ninjas v-bind:ninjas="ninjas"></app-ninjas>
-    <hr/>
-    <app-ninjas v-bind:ninjas="ninjas"></app-ninjas>
     <app-footer v-bind:title="title"></app-footer>
   </div>
 </template>
