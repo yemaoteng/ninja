@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <app-header v-bind:title="title"></app-header>
+    <app-header v-bind:title="title" v-on:fire="firechange"></app-header>
     <app-ninjas v-bind:ninjas="ninjas"></app-ninjas>
     <hr/>
     <app-ninjas v-bind:ninjas="ninjas"></app-ninjas>
@@ -33,6 +33,12 @@ export default {
       title:"This is a title"
     }
   },
+  methods: {
+    firechange:function() {
+      this.title = 'change title from the top';
+    }
+  },
+
 }
 </script>
 

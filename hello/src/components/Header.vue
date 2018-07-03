@@ -19,7 +19,8 @@ export default {
   },
   methods: {
     changetitle:function() {
-      this.title='changed title'
+      //this.title='vue wizard';
+      this.$emit('fire','wizard')
     }
   },
   computed:{
