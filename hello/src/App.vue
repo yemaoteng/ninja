@@ -36,7 +36,30 @@ export default {
       this.title = 'change title from the top';
     }
   },
-
+  beforeCreate() {
+    alert('beforeCreate');
+  },
+  created(){
+    alert('created');
+  },
+  beforeMount() {
+    alert('beforeMount');
+  },
+  mounted() {
+    alert('mounted');
+  },
+  beforeUpdate() {
+    alert('beforeUpdate');
+  },
+  updated() {
+    alert('updated')
+  },
+  beforeDestroy() {
+    alert('beforeDestroy');
+  },
+  destroyed() {
+    alert('destroyed');
+  },
 }
 </script>
 
