@@ -1,9 +1,14 @@
 <template>
   <div>
     <app-son>
-      <p slot="foot-slot">This is p to son</p>
-      <h2 slot="head-slot">This is h2 to son</h2>
-      
+      <h2 slot="head-slot">今日头条要打架！</h2>
+      <p slot="table-slot">报表</p>
+      <p slot="foot-slot">记者：路小花</p>
+    </app-son>
+    <app-son>
+      <h2 slot="head-slot">腾讯股价大涨</h2>
+      <p slot="table-slot">利好信息列表</p>
+      <p slot="foot-slot" class="editor">记者：王小明</p>
     </app-son>
   </div>
 </template>
@@ -18,5 +23,8 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.editor {
+  color: red;
+}
 </style>
