@@ -1,7 +1,10 @@
 <template>
   <div>
-    <h1>This is App.vue</h1>
-    <app-son></app-son>
+    <app-son>
+      <p slot="foot-slot">This is p to son</p>
+      <h2 slot="head-slot">This is h2 to son</h2>
+      
+    </app-son>
   </div>
 </template>
 
