@@ -5,6 +5,7 @@
     <input type="text" v-model="blog.title"/>
     <h3>Blog content</h3>
     <textarea v-model="blog.content"/>
+    <h3>Jobs: </h3>
     <input type="checkbox" value="ninja" v-model="blog.categories">
     <span>ninja</span>
     <input type="checkbox" value="wizard" v-model="blog.categories">
@@ -13,6 +14,12 @@
     <span>scientist</span>
     <input type="checkbox" value="engineer" v-model="blog.categories">
     <span>engineer</span>
+    <h3>Author: </h3>
+    <select v-model="blog.author">
+        <option v-for="author in authors" :key="author.id">
+            {{ author }}
+        </option>
+    </select>
     <br/>
     <h2>Perview</h2>
     <div>
@@ -25,6 +32,8 @@
                 {{ category }}
             </li>
         </ul>
+        <p>Author: {{ blog.author }}</p>
+
     </div>
 </div>
 </template>
@@ -36,8 +45,11 @@ export default {
             blog: {
                 title: '',  
                 content: '',
-                categories:[]
-            }
+                categories:[],
+                author:'',
+            },
+            authors:['zhao','qian','sun','li']
+
         }
     },
 }
@@ -47,6 +59,10 @@ export default {
 #add-blog {
     width: 400px;
     margin:0 auto 0 auto;
+    text-align: left;
+    h1,h2 {
+        text-align: center;
+    }
     h3 {
         text-align: left;
     }
