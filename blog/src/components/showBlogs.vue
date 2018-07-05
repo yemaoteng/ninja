@@ -27,5 +27,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+#show-blogs {
+    >div {
+        max-width: 400px;
+        padding:20px;
+        margin:0 auto;
+    }
+    h1 {
+        line-height: 30px;
+    }
+    article {
+        text-align: left;
+    }
+}
 </style>
